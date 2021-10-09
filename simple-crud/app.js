@@ -4,4 +4,6 @@ let containerTodo = document.getElementById('todo-container');
 
 submitTodo.addEventListener('click', function(){
     let listTodo = document.createElement('article');
+
+    listTodo.innerText = inputTodo.value;
 });
