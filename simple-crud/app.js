@@ -10,4 +10,16 @@ submitTodo.addEventListener('click', function(){
     containerTodo.appendChild(listTodo);
 
     inputTodo.value = "";
+
+    listTodo.addEventListener('click', function() {
+        listTodo.style.textDecorationLine = 'line-through';
+
+        let doneTodo = document.createElement('article');
+
+        let containerDone = document.getElementById('done-container');
+
+        containerDone.appendChild(listTodo);
+
+    })
 });
+
