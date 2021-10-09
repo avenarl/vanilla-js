@@ -8,4 +8,6 @@ submitTodo.addEventListener('click', function(){
     listTodo.innerText = inputTodo.value;
 
     containerTodo.appendChild(listTodo);
+
+    inputTodo.value = "";
 });
