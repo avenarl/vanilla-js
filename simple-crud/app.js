@@ -1,6 +1,7 @@
 let inputTodo = document.getElementById('todo-text');
 let submitTodo = document.getElementById('submit-todo');
 let containerTodo = document.getElementById('todo-container');
+let containerDone = document.getElementById('done-container');
 
 submitTodo.addEventListener('click', function(){
     let listTodo = document.createElement('article');
@@ -16,10 +17,14 @@ submitTodo.addEventListener('click', function(){
 
         let doneTodo = document.createElement('article');
 
-        let containerDone = document.getElementById('done-container');
-
         containerDone.appendChild(listTodo);
 
+    })
+
+    let removeTodo = document.getElementById('remove-todo');
+
+    removeTodo.addEventListener('click', function() {
+        containerDone.innerHTML = "";
     })
 });
 
